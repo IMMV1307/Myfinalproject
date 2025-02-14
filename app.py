@@ -6,10 +6,10 @@ car_data = pd.read_csv('vehicles_us.csv')
 
 st.header("Dashboard de Análisis de Vehículos Usados")
 
-hist_button = st.button('Construir histograma') 
-
 if st.checkbox("Visualizar muestra de datos"):
     st.write(car_data.head())
+
+hist_button = st.button('Construir histograma') 
         
 if hist_button: 
     st.write(car_data.head())
