@@ -21,4 +21,4 @@ hist_button_2 = st.button('Construir grafico de dispersión')
 if hist_button_2: 
     st.write(car_data.head())
     fig = px.scatter(car_data, x="odometer", y="price", title= "Precio del vehículo en relación a los KM recorridos" ) 
-    fig.show()
+    st.plotly_chart(fig, use_container_width=True)
